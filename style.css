@@ -1,0 +1,160 @@
+.qwe {
+    height: 200px;
+    width: 400px;
+    border: 2px solid blue;
+    overflow: scroll;
+    padding: 10px;
+}
+
+.poi {
+    height: 200px;
+    width: 400px;
+    border: 2px solid rgb(0, 255, 98);
+    padding: 10px;
+}
+
+body {
+    background-color: white;
+}
+
+.out {
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    border: 2px solid black;
+    margin-top: 5px;
+}
+
+.inn {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(43, 226, 89);
+    transform: scale(0.5) rotate(45deg);
+    border: 2px solid black;
+    font-size: 50px;
+}
+
+.tran {
+    background-color: black;
+    width: 400px;
+    height: 400px;
+    transition: background-color 5s ease-in;
+}
+
+.tran:hover {
+    background-color: red;
+}
+
+.ccc {
+    background-color: blue;
+    width: 200px;
+    height: 100px;
+    margin-top: 20px;
+    transition: width 10s ease-in;
+}
+
+.ccc:hover {
+    width: 1000px;
+}
+
+.field {
+    margin-top: 100px;
+    width: 30%;
+}
+
+.bat {
+    transition: transform 0.2s ease-in-out 1s;
+    width: 100%;
+}
+
+.bat:hover {
+    transform: rotate(-70deg);
+    transform-origin: 100% 0%;
+}
+
+.ball {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    left: 640px;
+    bottom: 90px;
+    transition: transform 1s ease-in-out 1.3s;
+}
+
+.field:hover .ball {
+    transform: translate(700px, -300px);
+}
+
+.stage {
+    background-color: aquamarine;
+    height: 100px;
+    width: 1300px;
+    margin-top: 200px;
+}
+
+.ball2 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 50%;
+    position: absolute;
+}
+
+@keyframes slide {
+    0% {
+        left: 0px;
+        background-color: red;
+    }
+
+    50% {
+        left: 600px;
+        background-color: blue;
+    }
+
+    100% {
+        left: 1200px;
+        background-color: yellow;
+    }
+}
+
+.stage:hover .ball2 {
+    animation: slide 3s ease-in-out 1s infinite alternate;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+.box {
+    margin-top: 20px;
+    height: 200px;
+    width: 400px;
+    font-size: 40px;
+    border: 3px solid mediumaquamarine;
+    border-radius: 5%;
+}
+
+.cont {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ent {
+    flex: auto;
+}
+
+.griditem {
+    border: 2px solid black;
+    height: 400px;
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    margin-top: 50px;
+}

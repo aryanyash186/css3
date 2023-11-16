@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    max-width: 1400px;
+    margin: 50px auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.food {
+    margin: 20px;
+    border: 5px solid darkgray;
+    border-radius: 10px;
+    width: 250px;
+    padding: 10px;
+}
+
+.food img {
+    width: 100%;
+}
+
+@media (max-width: 500px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container .food {
+        background-color: rosybrown;
+    }
+}
+
+@media (min-width: 1000px) {
+    .container .food {
+        background-color: skyblue;
+    }
+}
